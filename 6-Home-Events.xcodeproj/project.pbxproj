@@ -14,13 +14,18 @@
 		DC09B1EB1860BB01000FBF49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B1EA1860BB01000FBF49 /* main.m */; };
 		DC09B1EF1860BB01000FBF49 /* ELVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B1EE1860BB01000FBF49 /* ELVAppDelegate.m */; };
 		DC09B1F21860BB01000FBF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC09B1F01860BB01000FBF49 /* Main.storyboard */; };
-		DC09B1F51860BB01000FBF49 /* ELVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B1F41860BB01000FBF49 /* ELVViewController.m */; };
+		DC09B1F51860BB01000FBF49 /* ELVEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B1F41860BB01000FBF49 /* ELVEventsViewController.m */; };
 		DC09B1F71860BB01000FBF49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC09B1F61860BB01000FBF49 /* Images.xcassets */; };
 		DC09B1FE1860BB01000FBF49 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC09B1FD1860BB01000FBF49 /* XCTest.framework */; };
 		DC09B1FF1860BB01000FBF49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC09B1DE1860BB01000FBF49 /* Foundation.framework */; };
 		DC09B2001860BB01000FBF49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC09B1E21860BB01000FBF49 /* UIKit.framework */; };
 		DC09B2081860BB01000FBF49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC09B2061860BB01000FBF49 /* InfoPlist.strings */; };
 		DC09B20A1860BB01000FBF49 /* __Home_EventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B2091860BB01000FBF49 /* __Home_EventsTests.m */; };
+		DC09B2151860BDEB000FBF49 /* ELVEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B2141860BDEB000FBF49 /* ELVEvent.m */; };
+		DC09B2181860C0EC000FBF49 /* ELVEventsBook.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B2171860C0EC000FBF49 /* ELVEventsBook.m */; };
+		DC09B21C1860C4BB000FBF49 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC09B21B1860C4BB000FBF49 /* defaultImage.png */; };
+		DC09B21F1860D128000FBF49 /* ELVEventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B21E1860D128000FBF49 /* ELVEventCollectionViewCell.m */; };
+		DC09B2221860F3C3000FBF49 /* ELVEventHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09B2211860F3C3000FBF49 /* ELVEventHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +50,23 @@
 		DC09B1ED1860BB01000FBF49 /* ELVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELVAppDelegate.h; sourceTree = "<group>"; };
 		DC09B1EE1860BB01000FBF49 /* ELVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELVAppDelegate.m; sourceTree = "<group>"; };
 		DC09B1F11860BB01000FBF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC09B1F31860BB01000FBF49 /* ELVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELVViewController.h; sourceTree = "<group>"; };
-		DC09B1F41860BB01000FBF49 /* ELVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELVViewController.m; sourceTree = "<group>"; };
+		DC09B1F31860BB01000FBF49 /* ELVEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELVEventsViewController.h; sourceTree = "<group>"; };
+		DC09B1F41860BB01000FBF49 /* ELVEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELVEventsViewController.m; sourceTree = "<group>"; };
 		DC09B1F61860BB01000FBF49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DC09B1FC1860BB01000FBF49 /* 6-Home-EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "6-Home-EventsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC09B1FD1860BB01000FBF49 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DC09B2051860BB01000FBF49 /* 6-Home-EventsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "6-Home-EventsTests-Info.plist"; sourceTree = "<group>"; };
 		DC09B2071860BB01000FBF49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC09B2091860BB01000FBF49 /* __Home_EventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Home_EventsTests.m; sourceTree = "<group>"; };
+		DC09B2131860BDEB000FBF49 /* ELVEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVEvent.h; sourceTree = "<group>"; };
+		DC09B2141860BDEB000FBF49 /* ELVEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVEvent.m; sourceTree = "<group>"; };
+		DC09B2161860C0EC000FBF49 /* ELVEventsBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVEventsBook.h; sourceTree = "<group>"; };
+		DC09B2171860C0EC000FBF49 /* ELVEventsBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVEventsBook.m; sourceTree = "<group>"; };
+		DC09B21B1860C4BB000FBF49 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
+		DC09B21D1860D128000FBF49 /* ELVEventCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVEventCollectionViewCell.h; sourceTree = "<group>"; };
+		DC09B21E1860D128000FBF49 /* ELVEventCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVEventCollectionViewCell.m; sourceTree = "<group>"; };
+		DC09B2201860F3C3000FBF49 /* ELVEventHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVEventHeaderView.h; sourceTree = "<group>"; };
+		DC09B2211860F3C3000FBF49 /* ELVEventHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVEventHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +126,22 @@
 		DC09B1E41860BB01000FBF49 /* 6-Home-Events */ = {
 			isa = PBXGroup;
 			children = (
+				DC09B21B1860C4BB000FBF49 /* defaultImage.png */,
 				DC09B1ED1860BB01000FBF49 /* ELVAppDelegate.h */,
 				DC09B1EE1860BB01000FBF49 /* ELVAppDelegate.m */,
 				DC09B1F01860BB01000FBF49 /* Main.storyboard */,
-				DC09B1F31860BB01000FBF49 /* ELVViewController.h */,
-				DC09B1F41860BB01000FBF49 /* ELVViewController.m */,
+				DC09B1F31860BB01000FBF49 /* ELVEventsViewController.h */,
+				DC09B1F41860BB01000FBF49 /* ELVEventsViewController.m */,
 				DC09B1F61860BB01000FBF49 /* Images.xcassets */,
 				DC09B1E51860BB01000FBF49 /* Supporting Files */,
+				DC09B2131860BDEB000FBF49 /* ELVEvent.h */,
+				DC09B2141860BDEB000FBF49 /* ELVEvent.m */,
+				DC09B2161860C0EC000FBF49 /* ELVEventsBook.h */,
+				DC09B2171860C0EC000FBF49 /* ELVEventsBook.m */,
+				DC09B21D1860D128000FBF49 /* ELVEventCollectionViewCell.h */,
+				DC09B21E1860D128000FBF49 /* ELVEventCollectionViewCell.m */,
+				DC09B2201860F3C3000FBF49 /* ELVEventHeaderView.h */,
+				DC09B2211860F3C3000FBF49 /* ELVEventHeaderView.m */,
 			);
 			path = "6-Home-Events";
 			sourceTree = "<group>";
@@ -232,6 +255,7 @@
 				DC09B1F71860BB01000FBF49 /* Images.xcassets in Resources */,
 				DC09B1E91860BB01000FBF49 /* InfoPlist.strings in Resources */,
 				DC09B1F21860BB01000FBF49 /* Main.storyboard in Resources */,
+				DC09B21C1860C4BB000FBF49 /* defaultImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC09B1F51860BB01000FBF49 /* ELVViewController.m in Sources */,
+				DC09B2181860C0EC000FBF49 /* ELVEventsBook.m in Sources */,
+				DC09B2221860F3C3000FBF49 /* ELVEventHeaderView.m in Sources */,
+				DC09B21F1860D128000FBF49 /* ELVEventCollectionViewCell.m in Sources */,
+				DC09B1F51860BB01000FBF49 /* ELVEventsViewController.m in Sources */,
 				DC09B1EF1860BB01000FBF49 /* ELVAppDelegate.m in Sources */,
+				DC09B2151860BDEB000FBF49 /* ELVEvent.m in Sources */,
 				DC09B1EB1860BB01000FBF49 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

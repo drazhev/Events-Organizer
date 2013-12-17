@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "ELVAppDelegate.h"
+#import "ELVEventsBook.h"
 
 int main(int argc, char * argv[])
 {
