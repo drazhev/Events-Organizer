@@ -32,8 +32,6 @@
 		DCA993B1186211CD00CBFFDC /* ELVEventDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA993B0186211CD00CBFFDC /* ELVEventDateTableViewCell.m */; };
 		DCA993B41862260B00CBFFDC /* ELVEventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA993B31862260B00CBFFDC /* ELVEventDetailsViewController.m */; };
 		DCA993B7186246BD00CBFFDC /* ELVEventDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA993B6186246BD00CBFFDC /* ELVEventDescriptionTableViewCell.m */; };
-		DCA993B918624DC600CBFFDC /* btn-menu01.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA993B818624DC600CBFFDC /* btn-menu01.png */; };
-		DCA993BB18624E0C00CBFFDC /* icon-mobileMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCA993BA18624E0C00CBFFDC /* icon-mobileMenu.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +85,6 @@
 		DCA993B31862260B00CBFFDC /* ELVEventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVEventDetailsViewController.m; sourceTree = "<group>"; };
 		DCA993B5186246BD00CBFFDC /* ELVEventDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELVEventDescriptionTableViewCell.h; sourceTree = "<group>"; };
 		DCA993B6186246BD00CBFFDC /* ELVEventDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELVEventDescriptionTableViewCell.m; sourceTree = "<group>"; };
-		DCA993B818624DC600CBFFDC /* btn-menu01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-menu01.png"; sourceTree = "<group>"; };
-		DCA993BA18624E0C00CBFFDC /* icon-mobileMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "icon-mobileMenu.gif"; path = "../../../../../Downloads/icon-mobileMenu.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +144,6 @@
 		DC09B1E41860BB01000FBF49 /* 6-Home-Events */ = {
 			isa = PBXGroup;
 			children = (
-				DCA993BA18624E0C00CBFFDC /* icon-mobileMenu.gif */,
-				DCA993B818624DC600CBFFDC /* btn-menu01.png */,
 				DC09B21B1860C4BB000FBF49 /* defaultImage.png */,
 				DC09B1ED1860BB01000FBF49 /* ELVAppDelegate.h */,
 				DC09B1EE1860BB01000FBF49 /* ELVAppDelegate.m */,
@@ -288,9 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA993BB18624E0C00CBFFDC /* icon-mobileMenu.gif in Resources */,
 				DC09B1F71860BB01000FBF49 /* Images.xcassets in Resources */,
-				DCA993B918624DC600CBFFDC /* btn-menu01.png in Resources */,
 				DC09B1E91860BB01000FBF49 /* InfoPlist.strings in Resources */,
 				DC09B1F21860BB01000FBF49 /* Main.storyboard in Resources */,
 				DC09B21C1860C4BB000FBF49 /* defaultImage.png in Resources */,
