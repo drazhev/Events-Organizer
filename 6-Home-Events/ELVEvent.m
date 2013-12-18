@@ -22,7 +22,7 @@
 }
 
 -(id)init {
-    return [self initWithTitle:@"" image:nil relatedPersonName:@"" duration:0 andDescription:@""];
+    return [self initWithTitle:@"" image:[UIImage imageNamed:@"defaultImage.png"] relatedPersonName:@"" duration:0 andDescription:@""];
 }
 
 @end

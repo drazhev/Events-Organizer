@@ -13,6 +13,7 @@
 @property (nonatomic, strong) ELVEventsBook* eventsInfo;
 @property (nonatomic) NSInteger cellHeight;
 @property (nonatomic) BOOL isLandscape;
+@property (nonatomic, strong) NSIndexPath* selectedIndexPath;
 
 @end
 
@@ -21,13 +22,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(updateCollectionView:) name:@"updateCollection" object:nil];
+    self.title = @"All events";
     self.isLandscape = NO;
     self.cellHeight = 150;
     self.eventsInfo = [ELVEventsBook sharedBook];
     self.eventsCollectionView.dataSource = self;
     self.eventsCollectionView.delegate = self;
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonPressed:)];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)updateCollectionView: (NSNotification*) not {
+    [self.eventsCollectionView reloadData];
+}
+
+-(void)addButtonPressed: (id)sender {
+    [self performSegueWithIdentifier:@"newEventSegue" sender:self];
 }
 
 
@@ -65,6 +76,21 @@
     [cell.eventImageView.superview addConstraint:constraint];
     return cell;
 }
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedIndexPath = indexPath;
+    [self performSegueWithIdentifier:@"detailsEventSegue" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detailsEventSegue"]) {
+        ELVEventDetailsViewController* destVC = (ELVEventDetailsViewController*) segue.destinationViewController;
+        destVC.currentEvent = self.eventsInfo.eventsArray[self.selectedIndexPath.section][self.selectedIndexPath.row];
+        destVC.currentDate = self.eventsInfo.datesArray[self.selectedIndexPath.section];
+    }
+}
+
+
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout  *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (self.isLandscape) {
@@ -110,6 +136,13 @@
     [self.eventsCollectionView reloadData];
 }
 
+-(void)dealloc {
+    // I know while using ARC, dealloc is not needed
+    // but removing an observer is mandatory still
+    // and this is the best method to do so
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    // no need to call [super dealloc] though, because ARC does it
+}
 
 
 @end

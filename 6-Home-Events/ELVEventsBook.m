@@ -36,7 +36,7 @@
             NSString* randomTitle = [self genRandStringLength:10];
             NSString* randomRelatedPerson = [self genRandStringLength:10];
             NSTimeInterval randomDuration = (NSTimeInterval) (arc4random() % 60*60*10);
-            NSString* randomDescription = @"This is a test description. This is a test description. This is a test description";
+            NSString* randomDescription = @"This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. This is a test description. ";
             int randomDate = arc4random() % 3;
             [_eventsArray[randomDate] addObject:[[ELVEvent alloc] initWithTitle:randomTitle image:[UIImage imageNamed:@"defaultImage.png"] relatedPersonName:randomRelatedPerson duration:randomDuration andDescription:randomDescription]];
         }
@@ -44,9 +44,31 @@
     return self;
 }
 
--(void)addEvent:(ELVEvent *)event {
+- (BOOL)isSameDay:(NSDate*)date1 otherDay:(NSDate*)date2 {
+    NSCalendar* calendar = [NSCalendar currentCalendar];
+    
+    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
+    NSDateComponents* comp1 = [calendar components:unitFlags fromDate:date1];
+    NSDateComponents* comp2 = [calendar components:unitFlags fromDate:date2];
+    
+    return [comp1 day]   == [comp2 day] &&
+    [comp1 month] == [comp2 month] &&
+    [comp1 year]  == [comp2 year];
+}
+
+-(void)addEvent:(ELVEvent *)event withDate: (NSDate*) date{
     // do the appropriate validation here (if needed)
-    [self.eventsArray addObject:event];
+    for (NSDate* currentDate in self.datesArray) {
+        if ([self isSameDay:currentDate otherDay:date]) {
+            [self.eventsArray[[self.datesArray indexOfObject:currentDate]] addObject:event];
+            return;
+        }
+    }
+    [self.datesArray addObject:date];
+    [self.eventsArray addObject:[NSMutableArray array]];
+    int currentDateIndex = [self.datesArray indexOfObject:date];
+    [self.eventsArray[currentDateIndex] addObject:event];
+    
 }
 
 @end

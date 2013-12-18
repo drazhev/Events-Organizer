@@ -10,6 +10,7 @@
 #import "ELVEventsBook.h"
 #import "ELVEventCollectionViewCell.h"
 #import "ELVEventHeaderView.h"
+#import "ELVEventDetailsViewController.h"
 
 @interface ELVEventsViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *eventsCollectionView;

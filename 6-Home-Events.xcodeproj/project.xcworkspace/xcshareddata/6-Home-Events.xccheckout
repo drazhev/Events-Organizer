@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>02F5EBD7-9DDA-4FAE-95FB-B6B584F6F9A0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>6-Home-Events</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D8DC578-238B-4822-9105-86AD8D74C5DC</key>
+		<string>https://github.com/drazhev/Events-Organizer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>6-Home-Events.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D8DC578-238B-4822-9105-86AD8D74C5DC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/drazhev/Events-Organizer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D8DC578-238B-4822-9105-86AD8D74C5DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D8DC578-238B-4822-9105-86AD8D74C5DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>6-Home-Events</string>
+		</dict>
+	</array>
+</dict>
+</plist>

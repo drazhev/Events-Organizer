@@ -15,6 +15,6 @@
 @property (nonatomic, strong) NSMutableArray* datesArray;
 
 +(id)sharedBook;
--(void)addEvent: (ELVEvent*) event;
+-(void)addEvent: (ELVEvent*) event withDate: (NSDate*)date;
 
 @end
